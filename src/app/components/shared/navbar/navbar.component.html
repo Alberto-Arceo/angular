@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand">
-        <img src="assets/img/A-64.png" width="30" height="30" alt="">
+        <img src="assets/img/logo.png" width="30" height="30" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -12,18 +12,9 @@
             <li class="nav-item" routerLinkActive="active">
                 <a class="nav-link" [routerLink]="['inicio']">Inicio </a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Cursos
-          </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown" [routerLinkActive]>
-                    <a class="dropdown-item" href="#">Inducción</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['espanol']">Español</a>
-                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['matematicas']">Matemáticas</a>
-                </div>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['cursos']">Cursos </a>
             </li>
-
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Buscar Temas" aria-label="Search">

@@ -1,5 +1,5 @@
 body {
-    background: black !important;
+    padding-bottom: 14px;
 }
 
 .mail-container {
@@ -35,3 +35,5 @@ body {
 .fadeIn {
     animation-name: fadeIn;
 }
+
+;
