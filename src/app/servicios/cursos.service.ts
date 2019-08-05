@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 
+
 @Injectable()
 export class CursosService {
 
@@ -20,15 +21,27 @@ export class CursosService {
         }
       ];
 
+    private datos: any[] = [
+        ['Mazda', 2001, 2000],
+        ['Pegeout', 2010, 5000],
+        ['Honda Fit', 2009, 3000],
+        ['Honda CRV', 2010, 6000],
+    ];
+
 
     constructor() {
-        console.log('Servicio listo para usarse');
     }
 
     getCursos() {
         return this.curso;
     }
 
+    getData() {
+      return this.datos;
+    }
+
+    getExcel() {
+    }
 
 
 }
